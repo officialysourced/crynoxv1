@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         <h1>General Notes</h1>
         <p>We do not sell or share user data. The only time we will share information is when required by law, such as a court order or other valid legal request.</p>
-        <p>Please note: if you send an email to <b>crynox@crynox1.me</b>, we are using a forwarding service (<a href="https://forwardemail.net" target="_blank">forwardemail.net</a>). When we respond to you, the email will come from: <b>officialy.sourced@gmail.com</b>.</p>
+        <p>Please note: if you send an email to <b>crynox@crynox1.me</b>, we are using a forwarding service via (<a href="https://www.namecheap.com/support/knowledgebase/article.aspx/308/2214/how-to-set-up-free-email-forwarding/" target="_blank">namecheaps built in name forwarding system</a>). When we respond to you, the email will come from: <b>officialy.sourced@gmail.com</b>.</p>
 
         ---
 
@@ -42,24 +42,21 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
     `;
 
-    // Function to check and set the cookies toggle state from localStorage
     const checkCookiesState = () => {
         const cookiesEnabled = localStorage.getItem('cookies-enabled');
         if (cookiesEnabled !== null) {
             cookiesToggle.checked = (cookiesEnabled === 'true');
         } else {
-            // Default to true if no preference is set
             cookiesToggle.checked = true;
             localStorage.setItem('cookies-enabled', 'true');
         }
     };
 
-    // Add event listener to the cookies toggle
     if (cookiesToggle) {
         cookiesToggle.addEventListener('change', (event) => {
             localStorage.setItem('cookies-enabled', event.target.checked);
         });
-        checkCookiesState(); // Check the state on page load
+        checkCookiesState(); 
     }
 
     settingsList.addEventListener('click', (event) => {
