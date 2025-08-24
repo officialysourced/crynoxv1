@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crynox Settings</title>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo"><img src="/images/logo.png" alt="Crynox Logo"></div>
+    <div class="menu">
+      <a href="/index.html"><i data-lucide="home"></i></a>
+      <a href="/pages/proxy/proxy.html"><i data-lucide="search"></i></a>
+      <a href="/pages/games/games.html"><i data-lucide="gamepad-2"></i></a>
+    </div>
+    <div class="bottom">
+      <a href="/pages/settings/settings.html" class="active"><i data-lucide="settings"></i></a>
+    </div>
+  </div>
+
+  <div class="settings-wrapper">
+    <div class="settings-card">
+      <div class="settings-list">
+        <div class="settings-item">
+          <span>Account</span>
+          <i data-lucide="user"></i>
+        </div>  
+        <div class="settings-item">
+          <span>Cookies</span>
+          <label class="switch">
+            <input type="checkbox" id="cookies-toggle">
+            <span class="slider"></span>
+          </label>
+        </div>
+        <div class="settings-item">
+          <span>CrynoxTOS</span>
+          <i data-lucide="file-text"></i>
+        </div>
+        <div class="settings-item">
+          <span>Usage Policy</span>
+          <i data-lucide="shield"></i>
+        </div>
+        <div class="settings-item disabled">
+          <span>Themes (Coming Soon)</span>
+          <i data-lucide="palette"></i>
+        </div>
+        <div class="settings-item disabled">
+          <span>Plugins (Coming Soon)</span>
+          <i data-lucide="package"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="settings.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>
