@@ -14,108 +14,60 @@ body {
   top: 0;
   left: 0;
   height: 100vh;
-  width: 80px;
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(20px) saturate(180%);
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  width: 82px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(25px) saturate(180%);
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 0;
-}
-
-.logo {
-  font-size: 26px;
-  color: #fff;
-  margin-bottom: 30px;
+  padding: 22px 0;
 }
 
 .logo img {
-  width: 55px;
+  width: 58px;
   height: auto;
-  border-radius: 12px;
-  display: block;
-  margin-right: 0.10px;
+  border-radius: 18px;
+  margin-bottom: 38px;
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.08);
 }
 
 .menu {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  margin-top: 2.7in;
+  gap: 24px;
 }
 
 .menu a,
 .bottom a {
-  color: white;
-  font-size: 22px;
+  color: #fff;
+  font-size: 24px;
   text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px;
-  height: 50px;
+  width: 54px;
+  height: 54px;
   border-radius: 16px;
   transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.menu a i,
-.bottom a i {
-  z-index: 1;
 }
 
 .menu a.active {
-  background: rgba(255, 255, 255, 0.15);
-}
-
-.bottom {
-  margin-top: auto;
-  margin-bottom: 35px;
-}
-
-.center-text {
-  position: absolute;
-  top: 50%;
-  left: 53%;
-  transform: translate(-50%, -50%);
-  font-size: 5rem;
-  color: white;
-  font-weight: 700;
-
-}
-
-.shortcutsearch {
-  position: absolute;
-  top: 5.4in;
-  left: 8.5in;
-  right: 20px;
-  height: 50px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px) saturate(180%);
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  display: flex;
-  align-items: center;
-  padding: 0 15px;
-  width: 4in;
-
-}
-
-.shortcuticons svg {
-  background-color: #fff;
-  margin-right: 15in;
-}
-
-.menu a.active {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
 }
 
 .menu a:hover,
 .bottom a:hover {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.12);
   transform: scale(1.08);
 }
 
-
+.bottom {
+  margin-top: auto;
+  margin-bottom: 32px;
+}
